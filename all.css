@@ -1,0 +1,310 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    padding-top: 30px;
+    
+}
+a{
+    text-decoration:none;
+}
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+}
+.container2{
+    max-width: 780px;
+    margin: 0 auto;
+    padding:0 30px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.container3{
+    max-width: 780px;
+    margin: 0 auto;
+    padding:0 30px 30px;
+    height: 341px;
+    display: flex;
+    justify-content:space-between;
+}
+/* header Start */
+.header{
+    height: 40px;
+    margin-bottom: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1{
+    height: 100%;
+}
+.header img{
+    height: 100%;
+}
+.nav{
+    width: 319px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 216px;
+}
+.nav a{
+    display: block;
+    height: 100%;
+    text-decoration:none;
+    font: normal normal 600 16px/24px PingFang TC;
+    color: #3F5D45;
+}
+/* header End */
+/* banner Start */
+.banner{
+    margin-bottom: 60px;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+/* banner End */
+/* main Start */
+.main{
+    display: flex;
+    margin-bottom: 60px;
+}
+.lside{
+    width: 300px;
+    padding-right: 20px;
+}
+.lside h2{
+    height: 65px;
+    background: #3F5D45 ;
+    text-align: center;
+    color: #EAF0ED;
+    font: normal normal 600 24px/65px PingFang TC;
+}
+.lside li{
+    height: 65px;
+    border: 1px solid #EAF0ED;
+    
+}
+.lside a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font: normal normal 600 24px/65px PingFang TC;
+    color: #3F5D45;
+}
+.productList{
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item{
+    width: 300px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.itemPicture{
+    position: relative;
+    height: 315px;
+}
+.itemPicture p{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    background: #3F5D45 ;
+    width: 36px;
+    height: 107px;
+    color: #EAF0ED;
+    writing-mode: vertical-lr;
+    text-align: center;
+    font: normal normal 600 16px/36px PingFang TC;
+}
+.itemPicture .hart{
+    position: absolute;
+    top:19px;
+    right: 22px;
+    z-index: 1;
+}
+.itemPicture .picture{
+    position: absolute;
+    top:0px;
+    z-index: -1;
+}
+.itemInfo{
+    display: flex;
+    height: 56px;
+    width: 100%;
+    font: normal normal 300 20px/56px PingFang TC;
+    color: #3F5D45;
+    text-align:center;
+    
+}
+.itemInfo .name{
+    width: 173px;
+    border: 1px solid #EAF0ED;
+}
+.itemInfo .price{
+    width: 127px;
+    font-weight: 600px;
+    border: 1px solid #EAF0ED;
+}
+.intocart{
+    height: 65px;
+    border: 1px solid #EAF0ED;
+    background:#EAF0ED;
+    text-align: center;
+    font: normal normal 600 24px/65px PingFang TC;
+}
+.page{
+    margin-top: 10px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+}
+.page li{
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+    border: 1px solid #EAF0ED;
+}
+.page a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* main End */
+/* footer Start */
+.footer{
+    background: #EAF0ED;
+}
+.subscription{
+    padding: 30px 122px;
+    height: 56px;
+    background:#3F5D45 ;
+
+}
+.subscription_describe{
+    margin-right:104px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subscription p{
+    font: normal normal normal 24px/29px Helvetica Neue;
+    color: #EAF0ED;
+}
+.subscription_describe img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.subscription_inputbox{
+    width: 380px;
+    height: 56px;
+    padding-left: 20px;
+    background: #EAF0ED;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subscription_inputbox a{
+    width: 64px;
+    height: 100%;
+    background: #FFE180 ;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.companyInfo{
+    margin-top: 38.9px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.companyInfo p{
+    margin-bottom: 30px;
+    font: normal normal normal 16px/24px Helvetica Neue;
+    color: #3F5D45;
+}
+.s-26{
+    height: 26.6px;
+    width: 171px;
+}
+.s-32{
+    width: 32px;
+    height: 32px;
+}
+.companylogo{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+.companylogo img{
+    width: 59.3px;
+    height: 219px;
+}
+.companylogo p{
+    font: normal normal normal 16px/19px Times;
+    color: #3F5D45;
+}
+/* footer End */
